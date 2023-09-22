@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(44, 31, 88);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.card{
+    background:white;
+    border-radius: 4px;
+    height: 180vh;
+    width: 85vw;
+    box-shadow: 0 3px 6px rgb(0, 53, 128);
+    text-align: center;
+
+}
+
+img.birthday{
+    max-height: 80vh;
+}
+
+.muted{
+    opacity: 0.8;
+}
+
+img.ballons{
+    opacity: 0.95;
+    max-height: 80vh;
+    align-items: center;
+    animation-name:slideUp;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+}
+
+audio{
+    
+    opacity: 0.2;
+}
+
+
+@keyframes slideUp {
+    from{transform: translateY(200%)}
+    
+}
+
+@media only screen and (max-height: 640px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+  }
